@@ -1,1 +1,96 @@
+* How to create or initialize git repository? 
+- Use git init command and a file .git will be created 
 
+* What is fork? 
+- You make an own copy of entire code in multiple locations.  
+
+* What is the difference between clone and fork? 
+- Fork is used to keep a copy of the repo and clone is used to download the repo. 
+
+* What is the difference between Git pull and Git fetch? 
+- Git pull is to download the latest update from the repo. 
+  Git Fetch will show the changes are made the repository, It will not download to local repository.  
+
+* What is the difference between Git merge and Git rebase?
+
+* What is your branching strategy?
+- 
+
+- merging stratergy 
+
+
+
+What is the difference between merge --squash and rebase? 
+What is git stash & git Stash pop? 
+
+To pause the current edit and save it for tempararily 
+
+ 
+
+Git Checkout to swtich the branch.  
+
+ 
+
+Pull Request. 
+
+ 
+
+What is your branching strategy? 
+
+The two branching strategy that we follow are Trunk Based development and Git Flow Branch Strategy. 
+
+ 
+
+Git Flow Branch Strategy:  
+
+In Gitflow, there is one main development branch called develop, with strict access enforced. When developer wants to add new feature, they create a feature branch off the develop branch. Once the development of the feature is completed, the developer creates a pull request against the develop branch, prompting for feedbacks from other developers. The branch is merged in after all the comments on the pull request is addressed. When the business decides the new feature needs to release to customers a new branch is called release is created. The branch undergoes heavy testing, possible bug fixes, and is prepared to be merged into the master branch. The master branch holds the production codes, which is consumed by other application teams as a dependency or used by customers. 
+
+ 
+
+Trunk Branching Strategy
+ 
+
+Trunk Based development: In trunk based, all developers work off the master branch as the main branch. When the developer wants to add a new feature, they create a feature branch from the master branch. Once development of the feature is completed, the developer creates a pull request against the master branch. Prior to merging, the branch must compile and pass unit or integration tests. Like the GIT Flow model, the master branch holds the productions codes and latest codes releases. 
+
+Trunk Branching Strategy
+ 
+
+What will happen when you have conflict when you commit the code? 
+
+Colaborate with developer to resolve.  
+
+ 
+
+*********   Please explain each commands: ************* 
+
+~ Git init -  which initialises or creates the git repo. 
+
+~ Ls .git 
+
+~ Git status   -  used to display the current status of the local repository. 
+
+~ Git add filename  - adds a change in the working directory to the staging area. 
+
+~ Git diff -  
+
+~ Git log - utility tool to review and read a history of everything that happens to a repository. 
+
+~ Git commit -  
+
+~ Git reset --hard commit ID 
+
+~ Git push 
+
+~ Git clone URL 
+
+~ Git pull 
+
+~ Git remote –v 
+
+~ Git remote add URL 
+
+~ Git cherry-pick commit ID 
+
+~ Git merge 
+
+~ Git Rebase 
