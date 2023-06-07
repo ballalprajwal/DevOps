@@ -9,7 +9,7 @@
 
 * What is the difference between Git pull and Git fetch? 
 - Git pull is to download the latest update from the repo. 
-  Git Fetch will show the changes are made the repository, It will not download to local repository.  
+  Git Fetch will show the latest changes that are made in the repository, It will not download to local repository.  
 
 * What is the difference between Git merge and Git rebase?
 
