@@ -11,8 +11,6 @@
 - Git pull is to download the latest update from the repo. 
   Git Fetch will show the latest changes that are made in the repository, It will not download to local repository.  
 
-* What is the difference between Git merge and Git rebase?
-
 * What is your branching strategy?
 - We use git flow branching stratergy:
   In Gitflow, there is one main development branch called develop, with strict access enforced. When developer wants to add new feature, 
@@ -25,7 +23,10 @@
   In trunk based, all developers work off the master branch as the main branch. When the developer wants to add a new feature, they create a feature branch from the master
   branch. Once development of the feature is completed, the developer creates a pull request against the master branch. Prior to merging, the branch must compile and 
   pass unit or integration tests. Like the GIT Flow model, the master branch holds the productions codes and latest codes releases. 
+----------------------------------------
 
+* What is the difference between Git merge and Git rebase?
+- Merge tracks the entire history of commits, while rebase rewrites a new one.
    
 
 - merging stratergy 
