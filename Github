@@ -76,6 +76,10 @@ Colaborate with developer to resolve.
 
 ~ Git pull 
 
+~ Git stash
+
+~Git Stash pop
+
 ~ Git remote –v 
 
 ~ Git remote add URL 
