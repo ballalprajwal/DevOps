@@ -40,10 +40,6 @@ To pause the current edit and save it for tempararily
 
  
 
-Git Checkout to swtich the branch.  
-
- 
-
 Pull Request. 
 
  
@@ -76,6 +72,8 @@ Colaborate with developer to resolve.
 
 ~ Git clone URL 
 
+~ Git Checkout  -- to swtich the branch.  
+
 ~ Git pull 
 
 ~ Git remote –v 
@@ -85,5 +83,7 @@ Colaborate with developer to resolve.
 ~ Git cherry-pick commit ID 
 
 ~ Git merge 
+
+~ Git merge --squash
 
 ~ Git Rebase 
