@@ -1,1 +1,31 @@
+* What is docker? 
+- Docker is an opensource containerization platform, it enables the developers to package applications into containers.  
 
+* What is the docker container and how it is different from Virtual machine? 
+~ VMs run as virtual environments on the same hardware with individual OS layer, whereas Docker runs on virtualizations of the same operating system. 
+
+* What is Dockerfile? 
+- A Dockerfile is a text document that contains set of instructions or commands that is used to assemble a docker image. 
+
+* What are docker images? 
+- Docker images act as a set of instructions to build a docker container.  
+
+* What is CMD vs ENTRYPOINT command in Dockerfile?  
+- CMD: sets default parameters that can be overridden by passing the values when container launches. 
+  ENTRYPOINT: Default parameters that cannot be overridden when container runs. If we pass the value when we run the container, then that value will run along with the
+  entrypoint value. 
+  
+* What is the difference between ADD and COPY command in Dockerfile? 
+- COPY provides just the basic support of copying local files into the container whereas ADD provides additional features like remote URL and tar extraction support. 
+
+
+
+**/=======  DOCKER COMMANDS =========//**
+
+#Working with Docker (Essential Commands) **/
+docker version                     -->   **/ To check the DOcker version  **/  
+docker info                        -->  **/  To Check the Docker Details    */
+docker images                      -->  **/  To list the DOcker images      */
+docker ps                          -->  **/  To list the active containers  */ 
+docker ps -a                       -->  **/  To list all containers         */
+docker run hello-world
