@@ -5,7 +5,7 @@
 ~ VMs run as virtual environments on the same hardware with individual OS layer, whereas Docker runs on virtualizations of the same operating system. 
 
 * What is Dockerfile? 
-- A Dockerfile is a text document that contains set of instructions or commands that is used to assemble a docker image. 
+- A Dockerfile is a text document that contains set of instructions or commands that is used to assemble a docker image.  
 
 * What are docker images? 
 - Docker images act as a set of instructions to build a docker container.  
