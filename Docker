@@ -22,10 +22,13 @@
 
 **/=======  DOCKER COMMANDS =========//**
 
-#Working with Docker (Essential Commands) **/
-docker version                     -->   **/ To check the DOcker version  **/  
-docker info                        -->  **/  To Check the Docker Details    */
-docker images                      -->  **/  To list the DOcker images      */
-docker ps                          -->  **/  To list the active containers  */ 
-docker ps -a                       -->  **/  To list all containers         */
-docker run hello-world
+#Working with Docker (Essential Commands) 
+docker version                     -->   **/  To check the Docker version    */  
+docker info                        -->   **/  To Check the Docker Details    */
+docker images                      -->   **/  To list the Docker images      */
+docker ps                          -->   **/  To list the active containers  */ 
+docker ps -a                       -->   **/  To list all containers         */
+docker run hello-world             -->   **/  To run a container             */
+docker start <contanerid>         -->   **/  To start a container           */
+docker stop httpd                  -->   **/  To s
+docker rm httpd
