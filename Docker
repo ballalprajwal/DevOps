@@ -15,7 +15,7 @@
   ENTRYPOINT: Default parameters that cannot be overridden when container runs. If we pass the value when we run the container, then that value will run along with the
   entrypoint value. 
   
-* What is the difference between ADD and COPY command in Dockerfile? 
+* What is the difference between ADD and COPY commands in Dockerfile? 
 - COPY provides just the basic support of copying local files into the container whereas ADD provides additional features like remote URL and tar extraction support. 
 
 
@@ -29,6 +29,8 @@ docker images                      -->   **/  To list the Docker images      */
 docker ps                          -->   **/  To list the active containers  */ 
 docker ps -a                       -->   **/  To list all containers         */
 docker run hello-world             -->   **/  To run a container             */
-docker start <contanerid>         -->   **/  To start a container           */
-docker stop httpd                  -->   **/  To s
-docker rm httpd
+docker start <contanerid>          -->   **/  To start a container           */
+docker stop httpd                  -->   **/  To stop the running container  */
+docker rm httpd                    -->   **/  To Remove the stopped container*/
+docker rmi httpd                   -->   **/  To remove the image from local */
+
