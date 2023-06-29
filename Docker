@@ -18,6 +18,21 @@
 * What is the difference between ADD and COPY commands in Dockerfile? 
 - COPY provides just the basic support of copying local files into the container whereas ADD provides additional features like remote URL and tar extraction support. 
 
+* Can you write a Dockerfile for Java Based Application?
+- To dockerize the Java Application we need to write Dockerfile and also we need code with filename.java format. Here is the Docker file.  
+
+          .......................... 
+          FROM openjdk 
+          WORKDIR /app 
+          COPY . /app 
+          RUN javac sample.java 
+          CMD ["java""sample"] 
+          ........................ 
+  After writing the dockerfile Run these command: 
+   + docker build -t Myjavaapp . 
+   + docker Run -itd --name java1 Myjavaapp 
+
+*
 
 
 **/=======  DOCKER COMMANDS =========//**
