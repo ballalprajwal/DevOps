@@ -27,6 +27,10 @@
 
 * What is the difference between Git merge and Git rebase?
 - Merge tracks the entire history of commits, while rebase rewrites a new one.
+
+* What is the difference between .git and .gitignore ? 
+- .git is everything in git, it will have the all the information about the repository. .gitignore is if you want to ignore any particular file while committing 
+   then you have to update it in .gitignore file.  
    
 
 - What is your merging stratergy ? 
