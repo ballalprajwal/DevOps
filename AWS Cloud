@@ -1,1 +1,56 @@
-Interview Questions related to AWS 
+* What is AWS Cloudfront ? Why we need to use Cloudfront? 
+- AWS Cloudfront is a globally distributed content delivery network that securely delivers content to the end users with high transfer speed and low latency. 
+  CloudFront will cache the website content on various edge locations around the world and whenever the request comes from end users, these edge locations will deliver
+  the content in order to lower the latency and improves the performance.  
+
+* What are Security Group and NACL? 
+- Security Group: It is acts as virtual firewall used to allow any particular traffic to an instance. Since it is stateful, if we allow the incoming traffic , 
+  then outgoing traffic will be automatically allowed. 
+  
+  Network Access Control List (NACL): NACL is acts as Virtual firewall for subnet level. We need to allow or deny the traffic for both incoming and outgoing traffic. 
+  Since it is stateless we need explicitly enter the rule for both incoming and outgoing.  
+
+* What is VPC, Subnet , Route Tables ?
+- Virtual Private CLoud (VPC): VPC is logically isolated network infrastructure that we can create on AWS cloud so that we can launch the AWS Resources into a 
+  virtual network that we have defined.
+  So we can setup subnets, Route tables, IGW, Elastic IP, NAT Gateway, Private and Public Network in the VPC based on the requirement. 
+  
+  Subnet: Subnet is a logical subdivision of an IP network. The practice of dividing a network into multiple networks is called subnetting.   
+  
+  There are 2 types of subnets: 
+  Public Subnet: The resources in this subnet can communicate with internet. 
+  Private Subnet: The resources in this subnet is hidden from the internet. 
+
+  Route Tables: Route Tables contains a set of rules called routes, that are used to determine where the network traffic from your subnet or gateway is directed.  
+
+* What is Elastic IP , Internet Gateway, NAT gateway? 
+- Elastic IP: An Elastic IP address is a reserved public IP address that you can assign to any instances, that will persist even if the instances are stopped.  
+  
+  Internet Gateway (IGW): Internet gateway is the component that allows communication between your VPC and the internet. 
+
+  NAT Gateway (Network Address Translation) : It is the component that connects the instances in the private subnet to the services outside the VPC and restricts the 
+  incoming traffic from external services.  
+
+* What is Cloudtrail and Cloudwatch? 
+- Cloudtrail: It is the complete track or logs of each and every event on the AWS account. It can record the information like username, IP address, Time, date event name, 
+  resource name, etc of each and every event on the account, and the logs saves in S3 bucket.  
+
+  Cloudwatch: It is a monitoring tool that mainly concerned with what's happening with AWS resources so that we can responds to it.  
+ 
+  Cloudwatch has these features: 
+
+    Cloudwatch Alarms: 
+    Cloudwatch Logs: 
+    Cloudwatch Metrics: 
+    Cloudwatch events: 
+
+* What is IAM ? What are, Users, User Groups, IAM role, IAM policies ? 
+- IAM is a permission system that regulates access to AWS resources and services.  
+
+  4 Key concepts  in IAM: 
+  Users: IAM User represents an individual entity or person who can interact with AWS using IAM User credentials. 
+  User Groups: User Group is a collection of users with the common theme. 
+  IAM Role: IAM Role is an IAM identity with collection of permission policies which can be used to interact with AWS based on the permissions defined.  
+  IAM Policies:  IAM Policies are the specific low level permission for access to AWS resources or services which has either allow or deny the permission to resources.  
+
+ 
