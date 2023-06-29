@@ -29,20 +29,18 @@
 - Merge tracks the entire history of commits, while rebase rewrites a new one.
    
 
-- merging stratergy 
+- What is your merging stratergy ? 
 
 
 
-What is the difference between merge --squash and rebase? 
+What is the difference between merge --squash and rebase?
+
 What is git stash & git Stash pop? 
+Git stash is to pause the current edit on the branch and save it for tempararily, So that we can switch the branch without commiting the changes.
 
-To pause the current edit and save it for tempararily 
-
- 
+Stash Pop is used to switch back to the state where we saved the code temporarily. 
 
 Pull Request. 
-
- 
 
 What will happen when you have conflict when you commit the code? 
 
