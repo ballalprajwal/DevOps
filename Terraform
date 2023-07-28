@@ -16,3 +16,26 @@
    Terraform Plan: This implements an execution strategy. 
    Terraform apply: The terraform apply command executes the actions proposed in a terraform plan. 
    Terraform destroy: The terraform destroy command terminates resources managed by your Terraform project. 
+
+* Tell me the scenario where you come across provisioners? 
+- If we have the script or file in our local machine we can copy the file to the remote instance by using a file provisioner, 
+  and if you want to install any application or modify the base image of the instance when you are creating the instance, then we can come across a remote provisioner.  
+
+  Yes, I came across file and remote exec provisioners. Let me explain why we used provisioners, We have already written a custom shell script that is located in the 
+  local system and which need to copy to remote server so here we used file provisioner and once the Instance is created remote exec provisioner will execute the 
+  shell script on the instance.  
+ 
+  There are 3 types of Provisioners: 
+      i. File Provisioner:  
+     ii. Local exec Provisioner: 
+    iii. Remote exec Provisioner:  
+
+* Few challenges that came across while working with Terraform? 
+-  i. we got a couple of minor incidences where apps team are going to do some manual changes on the application side and we don’t know and all of a sudden if we perform 
+     some actions on the terraform they lost their configuration, what they changed manually and we struggled to recall and retrieve those changes back.  
+  ii. After deploying, sometimes a team will come and say that they need changes in naming convention or they need to do some property changes,  when you come up with 
+      the function app, it has the dependencies with service plan, resource group, storage app. So it is all going to be impacted. So it was hectic to resolve such issues.  
+  iii. Importing the manually created resources to the terraform code was a bit challenging. Because when we import we can see a lot of unwanted default parameters will be 
+       there in the code. We are deploying the terraform using minimal parameters and segregating the imported code will be time-consuming. 
+
+
