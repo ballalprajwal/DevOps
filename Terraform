@@ -1,0 +1,18 @@
+
+* What is terraform? Why? 
+- It is an IaC tool that can be used to deploy infrastructure and services in any supported provider platform. 
+  It is a tool used to Create, update, and versioning infrastructure securely and efficiently. 
+
+* What is Terraform init? 
+- Terraform initializes the code using the command terraform init. This command is used to initialize the working directory containing terraform configuration file.  
+  Three operations will be performed in terraform init. 
+     i.   Plugin installation
+     ii.  Child module installation 
+     iii. Backend initialization 
+
+* How does terraform work? Lifecycle.  
+- There are 4 stages in Terraform's lifecycle.  
+   Terraform init: This is used in the initial stage, This command is used to run a working directory containing terraform configuration file. 
+   Terraform Plan: This implements an execution strategy. 
+   Terraform apply: The terraform apply command executes the actions proposed in a terraform plan. 
+   Terraform destroy: The terraform destroy command terminates resources managed by your Terraform project. 
