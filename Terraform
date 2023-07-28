@@ -17,6 +17,11 @@
    Terraform apply: The terraform apply command executes the actions proposed in a terraform plan. 
    Terraform destroy: The terraform destroy command terminates resources managed by your Terraform project. 
 
+ * What are plugins and providers? 
+ - Terraform is basically a third-party tool that can interact with any cloud platform and provisions the infra/resources. In the provider we define what type of platform 
+   that we are dealing with to create our infra and depending on that terraform will install the plugins related to that when we initialize the terraform. Basically, 
+   When we install Terraform it will have a basic Terraform tool and plugins will be installed depending on the provider that we are dealing with.  
+
 * Tell me the scenario where you come across provisioners? 
 - If we have the script or file in our local machine we can copy the file to the remote instance by using a file provisioner, 
   and if you want to install any application or modify the base image of the instance when you are creating the instance, then we can come across a remote provisioner.  
