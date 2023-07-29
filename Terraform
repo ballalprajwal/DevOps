@@ -35,12 +35,42 @@
      ii. Local exec Provisioner: 
     iii. Remote exec Provisioner:  
 
+* What are modules in Terraform? 
+- Terraform module is a collection of standard configuration files in a dedicated directory. Terraform modules enclosed groups of resources 
+   dedicated to one task, reducing the amount of code you have to develop for similar infrastructure components. 
+
+* What happens when 2 people apply the terraform code together? How to overcome with the conflict in the terraform? 
+- Basically, we are keeping our state file in the backend, we lock the state file. Whenever you lock the statefile, one process is going to be 
+  running and another process is not allowed to perform any action. So if Statelock is going to be applied, So if two people triggering at a time 
+  and who trigger the first and that will run, and then only it will run the next job.  
+
+* Can we merge 2 different statefile? 
+- No, That will impact the infra. You can use one state file and import the resources from another state file or you can use data. 
+
 * Few challenges that came across while working with Terraform? 
--  i. we got a couple of minor incidences where apps team are going to do some manual changes on the application side and we don’t know and all of a sudden if we perform 
-     some actions on the terraform they lost their configuration, what they changed manually and we struggled to recall and retrieve those changes back.  
+-  i. we got a couple of minor incidences where the apps team is going to do some manual changes on the application side and we don’t know and all of a sudden if we perform 
+     some actions on the terraform they lost their configuration, which they changed manually and we struggled to recall and retrieve those changes back.  
   ii. After deploying, sometimes a team will come and say that they need changes in naming convention or they need to do some property changes,  when you come up with 
       the function app, it has the dependencies with service plan, resource group, storage app. So it is all going to be impacted. So it was hectic to resolve such issues.  
   iii. Importing the manually created resources to the terraform code was a bit challenging. Because when we import we can see a lot of unwanted default parameters will be 
        there in the code. We are deploying the terraform using minimal parameters and segregating the imported code will be time-consuming. 
+
+* Let's assume 2 resources you are creating using Terraform, but we need to make sure once 1st resource is created successfully then only need to 
+  start creating 2nd resource, Is this possible? 
+- Yes, You have to come up with Depends_on in the resource. So when you use depends_on on the first resource, then the second resource will be 
+  created only after the creation of the first resource. 
+
+* What is terraform Statefile? 
+- Terraform state: Terraform keeps track of the resources that are created in a statefile. This file contains all the information that Terraform 
+  requires to update and delete infrastructure. 
+
+
+
+
+  
+
+
+
+
 
 
