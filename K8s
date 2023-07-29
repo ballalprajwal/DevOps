@@ -1,1 +1,12 @@
 * What are the main components of Kubernetes architecture? 
+- Kubernetes architecture exists in two parts: Control Plane/ Master node and Worker node. 
+  The control plane has 4 components: Kube-API Server, Kube-Scheduler, Kube Controller Manager, ETCD.
+  The Worker Node has Kubelet, Kube Proxy, and Container Runtime. 
+  The kube-api server is the central hub of the Kubernetes cluster that exposes the Kubernetes API. End users, and other cluster components, 
+   talk to the cluster via the API server. 
+  The kube-scheduler is responsible for scheduling pods on worker nodes.
+  Kube Controller Manager is responsible for running multiple controllers that maintain the desired state of the cluster.
+  The complete database of the Kubernetes cluster is stored in etcd.
+  kubelet interacts with both the container runtime as well as the Node. It is the process responsible for starting a pod with a container inside.
+  A container runtime is needed to run the application containers running on pods inside a pod. 
+   Kube-proxy contains on each node of the Kubernetes cluster and facilitates Kubernetes networking services inside and outside of the cluster. 
