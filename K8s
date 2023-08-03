@@ -12,3 +12,5 @@
    Kube-proxy contains on each node of the Kubernetes cluster and facilitates Kubernetes networking services inside and outside of the cluster. 
   We used K8s version 1.27
 
+What is Configmap in K8s?
+A Kubernetes ConfigMap is an API object that allows you to store data as key-value pairs.
