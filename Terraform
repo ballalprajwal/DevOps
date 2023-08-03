@@ -64,6 +64,13 @@
 - Terraform state: Terraform keeps track of the resources that are created in a statefile. This file contains all the information that Terraform 
   requires to update and delete infrastructure. 
 
+* What are the best practices in Terraform? 
+-  1. Make your application code into the modules, So that it is easy to maintain the code. 
+   2. Instead of writing complex code write in a minimalistic way to define the resources.  
+   3. Always maintain stable code in the proper branch. 
+   4. Always Keep Statefile in the Remote backend,  
+   5. Don’t give all the permission to terraform to perform resource actions. Minimal permissions.  
+
 
 
 
