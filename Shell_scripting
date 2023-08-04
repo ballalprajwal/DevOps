@@ -1,10 +1,8 @@
 * Write a script to report the usage of AWS in your project? 
 - I have configured a bash script to report the usage of resources in AWS and configured cronjob to send the report every day 5pm to the external tool : 
 
-********************************************** 
- #!/bin/bash 
-
- // List s3 buckets 
+#!/bin/bash 
+// List s3 buckets 
  echo "print list of s3" 
  aws s3 ls 
  // list all ec2 instances 
@@ -17,5 +15,19 @@
  aws iam list-users | jq '.Users[].UserName' 
 
 ************************************************************ 
+
+* Simple script using IF- else:
+
+#!/bin/bash
+m=1
+n=2
+if [ $n -eq $m ]
+then
+        echo "Both variables are the same"
+else
+        echo "Both variables are different"
+fi
+
+********************************************************
 
  
