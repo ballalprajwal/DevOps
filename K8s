@@ -12,5 +12,12 @@
    Kube-proxy contains on each node of the Kubernetes cluster and facilitates Kubernetes networking services inside and outside of the cluster. 
   We used K8s version 1.27
 
+* What is Deployment K8s and Why?
+- There are multiple reasons for the deployment of Kubernetes
+  Deployment provides us the capability to upgrade the application or pods seamlessly, using rolling updates, undo changes, and pause and resume changes as required.
+
+
+
+
 What is Configmap in K8s?
 A Kubernetes ConfigMap is an API object that allows you to store data as key-value pairs.
