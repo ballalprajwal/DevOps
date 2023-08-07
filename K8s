@@ -22,6 +22,9 @@
   Taints are for Nodes and Toleration for pods.
   3 conditions: No Schedule | Prefer NoSchedule | No Execution
 
+* What is Node Affinity?
+- The primary feature of Node affinity is to ensure that the pods are hosted on particular nodes.
+
 
 
 What is Configmap in K8s?
