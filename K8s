@@ -16,6 +16,11 @@
 - There are multiple reasons for the deployment of Kubernetes
   Deployment provides us the capability to upgrade the application or pods seamlessly, using rolling updates, undo changes, and pause and resume changes as required.
 
+* What are Taint and toleration? why it is required?
+- Taints and Tolerations are used to set restrictions on what pods can be scheduled on a node.
+  No Unwanted pods will be placed on the tainted node. only toleration-configured pods can be placed on the tainted node. 
+  Taints are for Nodes and Toleration for pods.
+  3 conditions: No Schedule | Prefer NoSchedule | No Execution
 
 
 
