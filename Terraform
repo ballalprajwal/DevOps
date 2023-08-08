@@ -73,7 +73,7 @@
 
 
 
-Basic terraform command: 
+Basic terraform configuiration file: 
 
 
 provider "aws" {
