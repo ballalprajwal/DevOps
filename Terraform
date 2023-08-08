@@ -7,7 +7,7 @@
 - Terraform initializes the code using the command terraform init. This command is used to initialize the working directory containing terraform configuration file.  
   Three operations will be performed in terraform init. 
      i.   Plugin installation
-     ii.  Child module installation 
+     ii.  Chield module installation 
      iii. Backend initialization 
 
 * How does terraform work? Lifecycle.  
