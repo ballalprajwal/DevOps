@@ -73,6 +73,27 @@
 
 
 
+Basic terraform command: 
+
+
+provider "aws" {
+region = "us-east-1"
+secret_key = "12345qwert"
+access_key = "12345qwer"
+
+}
+
+resource "aws_instance" "Myinstance" {
+ami = "ami-12345qwert"
+instance_type = "t2.micro"
+
+}
+
+
+
+
+
+
 
   
 
