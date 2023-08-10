@@ -25,6 +25,11 @@
 * What is Node Affinity?
 - The primary feature of Node affinity is to ensure that the pods are hosted on particular nodes.
 
+* What are Demon Sets? Why it is used?
+- DaemonSet is a Kubernetes feature that lets you run a Kubernetes pod on all cluster nodes. Every time a new node is added to a cluster, the pod is added to it, 
+  and when a node is removed from the cluster, the pod is removed. This can be used as a monitoring agent and Logs Viewer or log collector.
+
+
 
 
 What is Configmap in K8s?
