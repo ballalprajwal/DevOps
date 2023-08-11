@@ -35,3 +35,13 @@ Terraform:
  Basic terraform configuiration file: 
 
 Docker:
+ What is docker?
+ What is the docker container and how it is different from Virtual machine?
+ What is Dockerfile? 
+ What are docker images? 
+ What is CMD vs ENTRYPOINT command in Dockerfile?
+ What is the difference between ADD and COPY commands in Dockerfile? 
+ Can you write a Dockerfile for Java Based Application?
+ Docker Commands:
+
+
