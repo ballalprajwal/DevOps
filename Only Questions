@@ -1,1 +1,37 @@
+Introduce yourself.
+What is your day-to-day activity?
+Explain your roles and responsibility.
 
+Git:
+How to create or initialize git repository? 
+What is the difference between clone and fork? 
+What is the difference between Git pull and Git fetch and git clone?
+What is fork?
+What is your branching strategy?
+What is the difference between Git merge and Git rebase?
+What is the difference between .git and .gitignore ? 
+What is git stash & git Stash pop?
+What is your merging stratergy ? 
+What is the difference between merge --squash and rebase?
+What is Pull Request ?
+What will happen when you have conflict when you commit the code? 
+Git Commands:
+
+Terraform: 
+ What is terraform? Why? 
+ What is Terraform init?
+ How does terraform work? Lifecycle.
+ What are plugins and providers? 
+ Tell me the scenario where you come across provisioners? 
+ What are modules in Terraform? 
+ What happens when 2 people apply the terraform code together? How to overcome with the conflict in the terraform? 
+ Can we merge 2 different statefile? 
+ Few challenges that came across while working with Terraform? 
+ What is terraform Statefile? 
+ What are the best practices in Terraform? 
+ Let's assume 2 resources you are creating using Terraform, but we need to make sure once 1st resource is created successfully then only need to 
+  start creating 2nd resource, Is this possible? 
+ Terraform commands:
+ Basic terraform configuiration file: 
+
+Docker:
