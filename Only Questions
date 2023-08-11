@@ -44,4 +44,15 @@ Docker:
  Can you write a Dockerfile for Java Based Application?
  Docker Commands:
 
+K8s:
+ What are the main components of Kubernetes architecture?
+ What is Deployment K8s and Why?
+ What are Taint and toleration? why it is required?
+ What is Node Affinity?
+ What are Demon Sets? Why it is used?
+ What is Configmap in K8s?
+ How to handle Secrets in K8s?
+
+
+
 
