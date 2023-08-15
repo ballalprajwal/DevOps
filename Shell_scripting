@@ -1,4 +1,4 @@
-* Write a script to report the usage of AWS in your project? 
+1. Write a script to report the usage of AWS in your project? 
 - I have configured a bash script to report the usage of resources in AWS and configured cronjob to send the report every day 5pm to the external tool : 
 
 #!/bin/bash 
@@ -16,7 +16,7 @@
 
 ************************************************************ 
 
-* Simple script using IF- else:
+2. Simple script using IF- else:
 
 #!/bin/bash
 m=1
@@ -30,7 +30,7 @@ fi
 
 ********************************************************
 
-John is working as a DevOps engineer at Amazon and he noticed that Amazon has 10000 VMs, For some reason he needs to manage 
+3. John is working as a DevOps engineer at Amazon and he noticed that Amazon has 10000 VMs, For some reason he needs to manage 
 all of these VMs and he needs to monitor the node health of VMs. Instead of going to the VMs every time and manually checking
 the Memory issue, CPU utilization, and Running Process, He can make use of the Shell script. he can write one simple shell 
 script and save the git repository, And when the DevOps engineer says that there is an issue with VM9999, So he can update 
@@ -51,6 +51,46 @@ nproc
 ps -ef | grep amazon | awk -F" " '{print $2}'   # print the process ID of the running processors
 
 **************************************************************************************
+
+4. write a script print number of "S" in mississipi.
+
+#!/bin/bash
+x=mississippi
+grep -o "s" <<< "$x" | wc -l
+
+******************************************************************************************
+How you will sort a list of names in a file?
+sort command
+
+********************************
+How will you  manage logs of a system that generate huge log files everyday?
+Use logrotate (gzip , zip)
+
+
+How will you debug the shell script?
+set -x
+
+****************************************************************************************
+What is crontab in Linux ?  Can you provide an example:
+
+How to open a file in read only mode?
+vim -r test.txt
+
+What is the difference between Softlink and hard links?
+
+What is the difference betweek BREAK and CONTINUE Statement?
+BREAK - Breaking the execution.
+CONTINUE - Continuing the execution - Skip and continue the next
+
+explain the best network utility that you have used ?
+Traceroute google.com
+
+
+
+
+
+
+
 
 
 
