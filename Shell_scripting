@@ -30,4 +30,30 @@ fi
 
 ********************************************************
 
- 
+John is working as a DevOps engineer at Amazon and he noticed that Amazon has 10000 VMs, For some reason he needs to manage 
+all of these VMs and he needs to monitor the node health of VMs. Instead of going to the VMs every time and manually checking
+the Memory issue, CPU utilization, and Running Process, He can make use of the Shell script. he can write one simple shell 
+script and save the git repository, And when the DevOps engineer says that there is an issue with VM9999, So he can update 
+the VM info in the script and run that shell script, SO that it will automatically log into the VM9999 and looks into the  
+Memory issue, CPU utilization, running processors. and generate a report on the issue. and also he can also configure it with
+cron jobs and check the node health of all of the VMs frequently and send a report through email. 
+
+#!/bin/bash
+
+# This Script outputs the node health
+
+set -x           # debug mode
+set -e           # exit the script when there is an error.
+set -o pipefail  # is used to read all the commands on pipeline.
+df -h
+free -g
+nproc
+ps -ef | grep amazon | awk -F" " '{print $2}'   # print the process ID of the running processors
+
+**************************************************************************************
+
+
+
+
+
+
