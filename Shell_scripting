@@ -59,6 +59,19 @@ x=mississippi
 grep -o "s" <<< "$x" | wc -l
 
 ******************************************************************************************
+
+5. write a shell script to print numbers divided by 3 & 5  and not 15
+
+#/bin/bash
+# Divisible by 3, Divisible by 5, not divisible by 15
+for i in {1...100}; do
+if [ 'expr $i % 3' == 0 ] || ['expr $i % 5' == 0] && ['expr $i % 15' != 0 ];
+then
+   echo $i
+fi
+done
+
+************************************************************************
 How you will sort a list of names in a file?
 sort command
 
@@ -85,10 +98,25 @@ CONTINUE - Continuing the execution - Skip and continue the next
 explain the best network utility that you have used ?
 Traceroute google.com
 
+* To list all the process ID :
+  ps -ef | awk -F" " '{print $2}'
 
 
+**********************************************************************
 
+write a shell script to print number divided by 3 & 5  and not 15
 
+#/bin/bash
+# Divisible by 3 , Divisible by 5 , not divisible by 15
+for i in {1...100}; do
+if [ 'expr $i % 3' == 0 ] || ['expr $i % 5' == 0] && [expr $i % 15' != 0 ];
+then
+   echo $i
+fi
+done
+
+************************************************************************
+ 
 
 
 
