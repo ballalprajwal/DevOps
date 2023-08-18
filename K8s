@@ -30,7 +30,9 @@
   and when a node is removed from the cluster, the pod is removed. This can be used as a monitoring agent and Logs Viewer or log collector.
 
 
-
-
 What is Configmap in K8s?
 A Kubernetes ConfigMap is an API object that allows you to store data as key-value pairs.
+
+
+What is static pod ?
+what is init container ?
