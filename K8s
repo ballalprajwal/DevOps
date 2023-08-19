@@ -29,10 +29,11 @@
 - DaemonSet is a Kubernetes feature that lets you run a Kubernetes pod on all cluster nodes. Every time a new node is added to a cluster, the pod is added to it, 
   and when a node is removed from the cluster, the pod is removed. This can be used as a monitoring agent and Logs Viewer or log collector.
 
+* what are init containers?
+- Init containers are used to perform certain tasks or actions before deploying the application pod. When the pod is created,
+  Init containers run first and the pods will start deploying only after the completion of the task from init containers. 
 
-What is Configmap in K8s?
-A Kubernetes ConfigMap is an API object that allows you to store data as key-value pairs.
-
+* What is Configmap in K8s?
+- A Kubernetes ConfigMap is an API object that allows you to store data as key-value pairs.
 
 What is static pod ?
-what is init container ?
