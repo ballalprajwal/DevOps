@@ -53,4 +53,7 @@
   IAM Role: IAM Role is an IAM identity with collection of permission policies which can be used to interact with AWS based on the permissions defined.  
   IAM Policies:  IAM Policies are the specific low level permission for access to AWS resources or services which has either allow or deny the permission to resources.  
 
+* What are the layers in Lambda function?
+  Lambda layer can be code, libraries , custom runtime or other dependencies. you can upload layer once and reference within any lambda function. 
+
  
