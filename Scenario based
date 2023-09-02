@@ -1,0 +1,23 @@
+*  What are the security measures that you taken in your project? 
+-  we will take multiple security messures in the projects
+   1. In the userend I will implement authentication. 
+   2. I will secure the data using SSL/TLS.  
+   3. Encrypt the data at rest using KMS. 
+   4. Implementing  RBAC and specifying separate roles for separate group( admin, developer, tester etc ). 
+   5. Using NACL and Security group We can regulate the traffic coming in/out to the server.  
+   6. Keeping the database and application server in the private subnet and only exposing the load balancers on the public subnet.
+   7. Placing the WAF behind the load balancers to secure the application from unauthorized access.
+   8. We use guard duty to detect the suspicious activity in the network.  
+   9. Use Crowdstrike for continuous monitoring.
+   10. Use firewall in the application level such as palo-alto firewall. 
+   11. make use of services like Sheild to protect from DDOS.
+   12. Using monitoring tools like Splunk, Cloudwatch , Nagios to observe the infra.
+
+*  How did you do DR for your Cloud application? 
+   There are different option to choose DR from depending on RTO and RPO, There are 4 different strategies, 
+   1.Backup & restore , 2.Pilot light, 3.warm standby, 4.Multisite active-active for realtime.
+   For example: I have 2 load balancers in 2 different region those will be front end or application server, Route53 can send the 
+   traffic to appropriate region based on the latency based routing, even if one server goes down route53 will automatically sends all 
+   the traffic to other region. And for the database if I use dynamoDB I will use dynamoDB global table, it will automatically replicate 
+   along with continuous backup.  
+
