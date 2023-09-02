@@ -21,3 +21,5 @@
    the traffic to other region. And for the database if I use dynamoDB I will use dynamoDB global table, it will automatically replicate 
    along with continuous backup.  
 
+* Explain the 3 tier architecture ?
+
