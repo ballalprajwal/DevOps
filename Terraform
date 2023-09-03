@@ -71,7 +71,9 @@
    4. Always Keep Statefile in the Remote backend,  
    5. Don’t give all the permission to terraform to perform resource actions. Minimal permissions.  
 
-what is terraform data source ?
+what is terraform datasource ?
+
+
 What is dynamic block in terraform ?
 What is meta arguments in Terraform?
 How do you create 3 EC2 instances in 3 different regions?
