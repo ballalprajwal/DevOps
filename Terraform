@@ -76,9 +76,14 @@
 
 
 What is dynamic block in terraform ?
+Meta-arguments in Terraform are special arguments that can be used with resource blocks and modules to control their behavior or influence the 
+infrastructure provisioning process. They provide additional configuration options beyond the regular resource-specific arguments.
+
 What is meta arguments in Terraform?
+
 How do you create 3 EC2 instances in 3 different regions?
-We cannot have multiple regions in a single provider, So we need to create 3 different provider blocks with different regions. we can alias those providers so that when we write the resource block we can mention in which provider region we need to deploy the resource.  
+We cannot have multiple regions in a single provider, So we need to create 3 different provider blocks with different regions. we can alias those providers
+so that when we write the resource block we can mention in which provider region we need to deploy the resource.  
 
 
 Basic terraform configuiration file: 
