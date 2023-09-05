@@ -71,7 +71,8 @@
    4. Always Keep Statefile in the Remote backend,  
    5. Don’t give all the permission to terraform to perform resource actions. Minimal permissions.  
 
-what is terraform datasource ?
+* what is terraform datasource ?
+- Data sources provide dynamic information about entities that are not managed by the current Terraform and configuration.
 
 
 What is dynamic block in terraform ?
