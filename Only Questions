@@ -5,11 +5,10 @@ Explain your roles and responsibility.
 Git:
 How to create or initialize git repository? 
 What is the difference between Git pull and Git fetch and git clone and fork?
-What is your branching strategy?
+What is your branching strategy or merging stratergy?
 What is the difference between Git merge and Git rebase?
 What is the difference between .git and .gitignore ? 
 What is git stash & git Stash pop?
-What is your merging stratergy ? 
 What is the difference between merge --squash and rebase?
 What is Pull Request ?
 What will happen when you have conflict when you commit the code? 
