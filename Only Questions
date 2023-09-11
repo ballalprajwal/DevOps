@@ -4,7 +4,6 @@ Explain your roles and responsibility.
 
 Git:
 How to create or initialize git repository? 
-What is the difference between clone and fork? 
 What is the difference between Git pull and Git fetch and git clone and fork?
 What is your branching strategy?
 What is the difference between Git merge and Git rebase?
