@@ -32,7 +32,11 @@
    + docker build -t Myjavaapp . 
    + docker Run -itd --name java1 Myjavaapp 
 
-*
+*How to check the OS- release or Base image of the docker image ?
+- Run the docker container with the command 
+  
+          docker run python:3.6 cat /etc/*release*
+
 
 
 **/=======  DOCKER COMMANDS =========//**
