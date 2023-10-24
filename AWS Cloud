@@ -1,7 +1,7 @@
 * What is AWS Cloudfront ? Why we need to use Cloudfront? 
 - AWS Cloudfront is a globally distributed content delivery network that securely delivers content to the end users with high transfer speed and low latency. 
   CloudFront will cache the website content on various edge locations around the world and whenever the request comes from end users, these edge locations will deliver
-  the content in order to lower the latency and improves the performance.  
+  the content in order to lower the latency and improves the performance.   
 
 * What are Security Group and NACL? 
 - Security Group: It is acts as virtual firewall used to allow any particular traffic to an instance. Since it is stateful, if we allow the incoming traffic , 
