@@ -36,4 +36,16 @@
 * What is Configmap in K8s?
 - A Kubernetes ConfigMap is an API object that allows you to store data as key-value pairs.
 
+* What is Statefulsets in K8s?
+- K8s Statefulsets key Points:
+   > This is used for the applications like database application which needs stateful in the production.
+   > In Deployment, all pods of the replicas will use the single PersistentVolumeClaim that leads to write the content on single volume. statefulSets manages separate PVs for each pod.
+   > For Master-slave database, the ordered of the pod creation is managed by statefulset. Master should be created first then slaves and these pods should sync from master pod.
+   > In Statefulset, the order of the deletion of the pods will be from reverse order. Last created pod will be deleted first.
+   > Sticky Identity and sticky storage can be achieved by Statefulset. The name/DNS of the pod should be same if the pod restarts.
+   > The users requests should route to respective pods. i.e. write request should go to master and read request is to slaves. This can be achieved by headless service using Statefulset.
+
+
+
+
 What is static pod ?
